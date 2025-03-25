@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tìm Nhóm In-group</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="intro">
+        <h1>Chào mừng đến với trò chơi "Tìm Nhóm In-group"!</h1>
+        <p>Quét mã QR để tham gia trò chơi.</p>
+        <button id="startGameBtn">Bắt đầu trò chơi</button>
+    </div>
+
+    <div id="questionnaire" style="display: none;">
+        <h2>Chọn nhân vật bạn thích:</h2>
+        <div>
+            <label><input type="radio" name="character" value="Ngọc Kem"> Ngọc Kem</label>
+        </div>
+        <div>
+            <label><input type="radio" name="character" value="Đặng Tiến Hoàng"> Đặng Tiến Hoàng (Virus)</label>
+        </div>
+        <div>
+            <label><input type="radio" name="character" value="Jack-J97"> Ca sĩ Jack-J97</label>
+        </div>
+        <button id="submitAnswerBtn">Xong</button>
+    </div>
+
+    <div id="groupSection" style="display: none;">
+        <h2>Chúc mừng, bạn đã vào nhóm!</h2>
+        <div id="groupName"></div>
+        <p>Giờ hãy vẽ nhân vật của bạn!</p>
+        <canvas id="drawingCanvas" width="400" height="400"></canvas>
+        <button id="submitDrawingBtn">Nộp Vẽ</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
